@@ -1,6 +1,5 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :update, :destroy]
-  protect_from_forgery with: :exception, only: [:create, :update, :destroy]
 
   # GET /articles
   def index
